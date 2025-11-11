@@ -50,6 +50,7 @@ public class StatementPrinter {
         result.append(String.format("You earned %s credits%n", volumeCredits));
         return result.toString();
     }
+    // oops!
 
     private Play getPlay(Performance performance) {
         return plays.get(performance.getPlayID());
