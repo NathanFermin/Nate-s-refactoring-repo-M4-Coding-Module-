@@ -1,7 +1,7 @@
 package theater;
 
 /**
- * Class representing the name of the play and the type of play.
+ * Class representing the name of the play and the type of play. Yes.
  */
 public class Play {
 
