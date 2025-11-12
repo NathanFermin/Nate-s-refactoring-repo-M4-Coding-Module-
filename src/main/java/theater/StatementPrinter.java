@@ -34,12 +34,12 @@ public class StatementPrinter {
         }
 
         getAppend(result, String.format("Amount owed is %s%n",
-                usd(getTotalAmount())));
+                usd(getAmount())));
         result.append(String.format("You earned %s credits%n", getTotalVolumeCredits()));
         return result.toString();
     }
 
-    private int getTotalAmount() {
+    private int getAmount() {
         int totalAmount = 0;
         for (Performance performance : invoice.getPerformances()) {
             totalAmount += getThisAmount(performance, getPlay(performance));
